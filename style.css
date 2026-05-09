@@ -1,52 +1,84 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
-  font-family: Georgia, serif;
-  color: #2c2c2c;
-  background: #f9f6f0;
-  line-height: 1.7;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  color: #111;
+  background: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background: #3a5a40;
-  color: #fff;
-  padding: 1.2rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+#page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
 }
 
-header h1 { font-size: 1.5rem; }
+#site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
 
-nav { display: flex; gap: 1.2rem; }
+#site-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+nav {
+  font-size: 0.88rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
 
 nav a {
-  color: #d4edda;
-  text-decoration: none;
-  font-size: 0.95rem;
+  color: #333;
+  margin-right: 0.7rem;
 }
 
-nav a:hover { text-decoration: underline; }
-
-main {
-  max-width: 760px;
-  margin: 2.5rem auto;
-  padding: 0 1.5rem;
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.8rem 0;
 }
 
-.hero { margin-bottom: 2rem; }
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #333;
+}
 
-h2 { font-size: 1.6rem; margin-bottom: 0.6rem; color: #3a5a40; }
+h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.2rem;
+}
 
-h3 { font-size: 1.2rem; margin: 1.5rem 0 0.4rem; color: #4a6741; }
+p {
+  line-height: 1.6;
+  margin: 0 0 0.7rem;
+}
 
-article { border-left: 3px solid #3a5a40; padding-left: 1rem; margin: 1.5rem 0; }
+a { color: #00008b; }
+a:visited { color: #551a8b; }
+
+ul {
+  margin: 0.3rem 0 0.8rem 1.3rem;
+  padding: 0;
+}
+
+li {
+  line-height: 1.55;
+  margin-bottom: 0.3rem;
+}
+
+.dim { color: #666; font-size: 0.9rem; }
 
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.85rem;
-  color: #888;
-  border-top: 1px solid #ddd;
   margin-top: 3rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.8rem;
+  color: #888;
 }
